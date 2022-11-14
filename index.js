@@ -1,13 +1,12 @@
 const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
-const app = express();
 const router = require('./router');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const keys = require('./config/keys');
 
-
+const app = express();
 
 // DB Setup
 mongoose.connect(keys.MONGODB_URI, {
